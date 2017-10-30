@@ -4,7 +4,10 @@ Docker ApiDoc
 > [ApiDoc](http://apidocjs.com) container with inotify feature to rebuild
 documentation on file change.
 
-![Docker build status](https://img.shields.io/docker/build/etiennetremel/apidoc.svg)
+![Docker build status][badge-build-status] ![Image size][badge-image-size]
+
+[badge-build-status]: https://img.shields.io/docker/build/etiennetremel/apidoc.svg
+[badge-image-size]: https://img.shields.io/imagelayers/image-size/etiennetremel/apidoc/latest.svg
 
 
 ## Getting started
@@ -17,8 +20,8 @@ $ docker build -t apidoc .
 $ docker volume create apidoc
 
 # Clone the ApiDoc example documentation
-git clone https://github.com/apidoc/apidoc.git
-cd apidoc/example
+$ git clone https://github.com/apidoc/apidoc.git
+$ cd apidoc/example
 
 # Run API Doc
 $ docker run -d \
