@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-ENV APIDOC_VERSION=0.17.6
+ENV APIDOC_VERSION=0.17.5
 
 RUN apk add --update inotify-tools \
     && npm install -g apidoc@${APIDOC_VERSION} \
